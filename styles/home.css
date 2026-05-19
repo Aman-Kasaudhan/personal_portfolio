@@ -1,0 +1,250 @@
+.page-section{
+    margin-top: 100px;
+    display: flex;
+    /* flex-direction:column-reverse ; */
+    gap: 40px;
+  
+}
+.photo-aman{
+       height: 290px;
+       width: 290px;
+    }
+.image-container{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 80px;
+}
+.image-container::before,.image-container::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: conic-gradient(
+        transparent,
+        transparent,
+        transparent,
+        var(--green)
+    );
+    animation: revolve 4s linear infinite;
+
+}
+.image-container::after{
+    animation-delay: 2s;
+}
+
+@keyframes revolve {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+
+    }
+}
+
+.image-container img{
+    height: calc(100%-15px);
+    width: calc(100%-5px);
+
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    max-width: 500px;
+}
+
+.details h2{
+    font-size: 2.5rem;
+}
+.details h2 span{
+    background:linear-gradient(to right,var(--green),var(--white));
+    padding-bottom:2px;
+    border-bottom: 5px solid var(--green);
+    color: transparent;
+    -webkit-background-clip:text ;
+     
+}
+.details h3{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.details h3 span{
+    column-rule: var(--green);
+    display: inline-block;
+    min-width: 130px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: var(--green);
+}
+.details h3 span ::after{
+    content: "|";
+    margin-left: 5px;
+    animation: blink .7s steps(1) infinite;
+}
+@keyframes blink {
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+.details p{
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #d4d4d4;
+}
+
+.bottom{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+}
+.bottom-button{
+    display: flex;
+    gap: 20px;
+}
+.bottom-button button {
+    transition: all ease .3s;
+    width:12rem;
+    padding: .8rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 5px;
+    background:var(--green);
+    border: none;
+    cursor:pointer;
+}
+.bottom-button :hover{
+   
+     scale: 105%;
+}
+.social-icons{
+    /* color: var(--); */
+    font-size: 3rem;
+    display: flex;
+    gap:20px;
+}
+.social-icons a{
+    color: var(--white);
+        transition: all ease .3s;
+
+}
+.social-icons a:hover{
+    color:var(--green);
+    scale: 105%;
+}
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px){
+
+    .page-section{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .details{
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .details h2{
+        font-size: 2.3rem;
+    }
+
+    .details h3{
+        font-size: 1.5rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .details p{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .bottom{
+        align-items: center;
+    }
+
+    .bottom-button{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .bottom-button button{
+        width: 180px;
+        font-size: 1rem;
+    }
+
+    .social-icons{
+        justify-content: center;
+        font-size: 2.3rem;
+    }
+
+    .image-container{
+        width: 240px;
+        height: 240px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px){
+
+    .details h2{
+        font-size: 2rem;
+    }
+
+    .details h3{
+        font-size: 1.2rem;
+    }
+
+    .details p{
+        font-size: 0.95rem;
+    }
+
+    .bottom-button{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bottom-button button{
+        width: 100%;
+    }
+
+    .social-icons{
+        font-size: 2rem;
+        gap: 15px;
+    }
+
+    /* .image-container{
+        width: 200px;
+        height: 200px;
+    } */
+    /* .photo-aman{
+       height: 210px;
+       width: 210px;
+    } */
+}
+

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="assests/logo.png" >
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/pageStyle.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/contact.css">
+
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <div class="brand-info">
+                <img src="assests/logo.png" alt="logo" height="90px" width="90px">
+                <h2>Aman Kasaudhan</h2>
+            </div>
+          <nav>
+    <a href="#" class="nav-link active" data-section="home">Home</a>
+    <a href="#" class="nav-link" data-section="about">About</a>
+    <a href="#" class="nav-link" data-section="projects">Projects</a>
+    <a href="/contact" class="nav-link" data-section="contact">Contact</a>
+</nav>
+
+        </header>
+
+        <section class="page-section" id="home">
+
+        <div class="details">
+            <h2> <span >Aman </span>Kasaudhan</h2>
+            <h3>I`m <span id="typing-span"></span> </h3>
+            <p>Hi, I’m Aman Kasaudhan — a passionate Full Stack Developer
+and AI enthusiast focused on building modern, responsive,
+and user-friendly digital experiences.</p>
+            <div class="bottom">
+              <div class="bottom-button">
+                  <button style="width: 15rem;" onclick="downloadResume()"><i class="fa-solid fa-download" ></i>Download Resume</button>
+                  <!-- <button onclick="showContact()">Contact Us</button> -->
+
+              </div>
+              <div class="social-icons">
+                  
+                  <a href="https://www.linkedin.com/in/aman-kasaudhan-757634294?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+                      <i class="fa-brands fa-linkedin"></i>
+                  </a>
+
+                  <a href="https://github.com/Aman-Kasaudhan">
+                      <i class="fa-brands fa-square-github"></i>
+                    </a>
+                    
+                   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rajg99842@gmail.com" target="_blank">
+                        <i class="fa-solid fa-at"></i>
+                  </a>
+                
+                  <a href="https://www.instagram.com/aman_51_4/?hl=en">
+                    <i class="fa-brands fa-square-instagram"></i>
+                  </a>
+                </div>
+
+            </div>
+
+        </div>
+            
+            <div class="image-container">
+                <img src="assests/photo1.png" alt="Profile Picture" loading="lazy"   class="photo-aman">
+                
+            </div>
+
+        </section>
+
+       <section id="about" class="page-section about" style="display: none;">
+
+       <div class="about-container">
+
+      
+
+        <div class="about-image">
+            <img src="assests/photo1.png" alt="About Image">
+        </div>
+
+    
+
+        <div class="about-content">
+
+            <h2>About <span>Me</span></h2>
+
+            <h3>Full Stack Developer & AI Enthusiast</h3>
+
+            <p>
+                Hello! I’m Aman Kasaudhan, a passionate developer who enjoys
+                building modern web applications and solving real-world problems
+                using technology. I love working on creative projects related to
+                Full Stack Development, Artificial Intelligence, and modern UI design.
+            </p>
+
+            <p>
+                I have experience in HTML, CSS, JavaScript, React, Node.js,
+                MongoDB, and C++. I also enjoy competitive programming and
+                continuously improving my problem-solving skills.
+            </p>
+
+            <!-- SKILLS -->
+
+            <div class="skills">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>C++</span>
+                <span>AI/ML</span>
+
+            </div>
+
+           
+
+            <div class="about-box">
+
+                <h4>Projects</h4>
+
+                <!-- <p>• Deepfake Detection System</p> -->
+                <p>• Fashion Recommendation System</p>
+                <p>• EdTech Platform</p>
+
+            </div>
+
+           
+
+            <div class="coding-links">
+
+                <a href="https://codolio.com/profile/@aman" target="_blank">
+                   <i class="fa-brands fa-centercode"></i>Codilio
+                </a>
+                <a href="https://leetcode.com/u/amankasaudhan/" target="_blank">
+                    <i class="fa-brands fa-leetcode"></i> LeetCode
+                </a>
+
+                <a href="https://www.codechef.com/users/amankasaudhan" target="_blank">
+                    <i class="fa-solid fa-code"></i> CodeChef
+                </a>
+
+                <a href="https://codeforces.com/profile/amankasaudhan" target="_blank">
+                    <i class="fa-solid fa-laptop-code"></i> Codeforces
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+       </section>
+       
+       <section id="projects" class="page-section projects" style="display: none;">
+
+    <h2 class="project-heading">My <span>Projects</span></h2>
+
+    <div class="project-slider">
+
+        <!-- LEFT BUTTON -->
+        <button class="slide-btn prev-btn">
+            <i class="fa-solid fa-angle-left"></i>
+        </button>
+
+       <!-- PROJECT 1 -->
+
+<div class="project-card active-project">
+
+    <div class="project-content">
+
+        <h3>EdTech Platform</h3>
+
+        <p>
+            A modern EdTech platform designed for students to access learning
+            resources, authentication systems, course management, and responsive
+            dashboards. The platform includes secure login/signup with OTP
+            verification, modern UI, and scalable backend integration using
+            MongoDB and Node.js.
+        </p>
+
+        <div class="project-buttons">
+
+            <a href="https://github.com/Aman-Kasaudhan/STUDYDESK" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+
+            <a href="https://studydesk-black.vercel.app/" target="_blank">
+                <i class="fa-solid fa-globe"></i>
+                Live Demo
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- PROJECT 2 -->
+
+<div class="project-card">
+
+    <div class="project-content">
+
+        <h3>Fashion Recommendation System</h3>
+
+        <p>
+            An AI-powered fashion recommendation system that suggests clothing
+            products based on image similarity and user preferences using
+            machine learning and feature extraction techniques.
+        </p>
+
+        <div class="project-buttons">
+
+            <a href="https://github.com/Aman-Kasaudhan/fasion_recommendation_system" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+
+            <a href="https://fasion-recommendation-system.onrender.com" target="_blank">
+                <i class="fa-solid fa-globe"></i>
+                Live Demo
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- PROJECT 3 -->
+
+<div class="project-card">
+
+    <div class="project-content">
+
+        <h3>Deepfake Detection System</h3>
+
+        <p>
+            A deep learning based system that detects manipulated videos and
+            fake facial content using AI and computer vision techniques to
+            improve digital media authenticity and security.
+        </p>
+
+        <div class="project-buttons">
+
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+
+            <a href="#" target="_blank">
+                <i class="fa-solid fa-globe"></i>
+                Live Demo
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+        
+
+        <!-- RIGHT BUTTON -->
+
+        <button class="slide-btn next-btn">
+            <i class="fa-solid fa-angle-right"></i>
+        </button>
+
+    </div>
+
+       </section>
+
+       <section id="contact" class="page-section contact" style="display: none;">
+
+    <div class="contact-container">
+
+        <h2>Contact <span>Me</span></h2>
+
+        <p>
+            Feel free to contact me for collaborations, internships,
+            or project discussions.
+        </p>
+
+        <form id="contact-form">
+
+            <input 
+                type="text" 
+                id="name" 
+                name="from_name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input 
+                type="email"
+                id="email"
+                name="from_email"
+                placeholder="Your Email"
+                required
+            >
+            <input 
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Your Mobile Number"
+                required
+            >
+
+            <textarea
+                name="message"
+                id="message"
+                rows="6"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button type="submit" >
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+   
+
+<div class="popup" id="success-popup">
+
+    <div class="popup-box">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <h3>Message Sent!</h3>
+
+        <p>Your message has been sent successfully.</p>
+
+        <button onclick="closePopup()">
+            OK
+        </button>
+
+    </div>
+
+</div>
+
+       </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2e17bafdb2.js" crossorigin="anonymous"></script>
+    <script src="mail.js"></script>
+</body>
+</html>
