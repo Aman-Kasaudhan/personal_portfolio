@@ -111,12 +111,12 @@
     .about-container{
         flex-direction: column;
         text-align: center;
-        
+        gap:0px;
     }
 
     .about-content{
         align-items: center;
-        margin-top:-100px;
+        
     }
 
     .about-content h2{
